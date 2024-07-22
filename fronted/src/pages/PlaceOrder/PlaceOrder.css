@@ -39,3 +39,26 @@
 .place-order .cart-total button{
     margin-top: 35px;
 }
+.payment-method {
+    margin: 20px 0;
+    border: 1px solid #ddd; /* Light border around the container */
+    border-radius: 8px;    /* Rounded corners for the container */
+    padding: 15px;         /* Padding inside the container */
+    background-color: #fff; /* Background color of the container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+.payment-method label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Arial, sans-serif; /* Font styling for consistency */
+    margin-left: 10px;
+}
+.payment-method {
+    border: 2px solid #ccc; /* Slightly darker border for better visibility */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Spacing inside the container */
+    background-color: #f9f9f9; /* Light background color */
+}
