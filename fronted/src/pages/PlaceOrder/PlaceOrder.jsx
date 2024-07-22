@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const PlaceOrder = () => {
     const{getTotalCaertAmount,token,food_list,cartItems} = React.useContext(StoreContext);
-    const url="https://food-del-fronted.onrender.com";
+    const url="https://food-del-backend1-yzm5.onrender.com";
     const [data, setData] = React.useState({
         firstName: "",
         lastName: "",
