@@ -93,6 +93,10 @@
     color: white;
     cursor: pointer;
 }
+h2{
+    color: #555;
+
+}
 @media (max-width: 750px){
     .cart-bottom{
         flex-direction: column-reverse;
