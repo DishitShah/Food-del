@@ -5,8 +5,8 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const PlaceOrder = () => {
-    const{getTotalCaertAmount,token,food_list,cartItems,url} = React.useContext(StoreContext);
-
+    const{getTotalCaertAmount,token,food_list,cartItems} = React.useContext(StoreContext);
+    const url="https://food-del-fronted.onrender.com";
     const[data,setData]= React.useState({
         firstName:"",
         lastName:"",
