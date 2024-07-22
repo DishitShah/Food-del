@@ -12,7 +12,7 @@ const MyOrders = () => {
     const fetchOrders = async () => {
         
             const response = await axios.post(`${url}/api/order/userorders`, {}, { headers: { token } });
-            setData(response.data.data); // Ensure data is an array
+            setData(response.data.data.reverse()); // Ensure data is an array
         
     };
 
