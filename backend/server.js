@@ -12,16 +12,10 @@ import orderRouter from './routes/orderRoute.js';
 const app = express();
 const port = process.env.PORT || 4000;
 
-// CORS Configuration
-const corsOptions = {
-    origin: ['https://food-del-fronted.onrender.com'], // Replace with your frontend URL
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-};
-app.use(cors(corsOptions)); // Apply CORS configuration
 
 // Middleware
 app.use(express.json()); // Parse JSON data
+app.use(cors()); // Allow frontend to backend communication
 
 // DB connection
 connectDB();
