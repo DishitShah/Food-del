@@ -12,6 +12,11 @@ const placeOrder = async (req, res) => {
     try {
         console.log("Incoming request:", req.body);
 
+        // Validate request data
+        if (!req.body.userId || !req.body.items || !req.body.amount || !req.body.address) {
+            return res.json({ success: false, message: "Missing required fields" });
+        }
+
         const newOrder = new orderModel({
             userId: req.body.userId,
             items: req.body.items,
