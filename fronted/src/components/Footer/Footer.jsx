@@ -6,6 +6,9 @@ const d = new Date();
 let year = d.getFullYear();
 
 const Footer = () => {
+    const Linkedin = () => {
+        window.location.href = 'https://www.linkedin.com/in/dishit-shah-224353283/';
+    };
     return (
     <div className='footer' id='footer'>
         <div className="footer-content">
@@ -13,7 +16,7 @@ const Footer = () => {
                 <img src={assets.logo} alt="" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eaque accusantium deserunt dolorem veritatis modi, odio, dolorum hic quidem sed quisquam doloremque ratione consectetur dolor temporibus cumque? At suscipit natus quam placeat! Quasi sed adipisci atque natus. Eius recusandae sit deserunt expedita id labore, debitis, tempore est, nostrum dignissimos sunt.</p>
                 <div className="footer-social-icon">
-                    <img src={assets.linkedin_icon} alt="" />
+                    <img src={assets.linkedin_icon} alt="" onClick={Linkedin}  />
                 </div>
             </div>
             
